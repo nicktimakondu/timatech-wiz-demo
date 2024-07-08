@@ -1,6 +1,6 @@
 <template>
   <img id="logo" alt="TimaTech Logo" src="./assets/timatech_logo.png" />
-  <TimaTech msg="Welcome to Timatech Industries" />
+  <TimaTech msg="Welcome to Tima tech Industries. Definitely not Temu" />
 </template>
 
 <script>
