@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "timatech.name" . }}-www
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: {{ include "timatech.name" . }}-ingress-ip
+    networking.gke.io/managed-certificates: {{ include "timatech.name" . }}-cert
+    networking.gke.io/v1beta1.FrontendConfig: {{ include "timatech.name" . }}-frontend-config
+spec:
+  rules:
+    - host: argocd.timatech.timakondu.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: argocd-server-external
+                port:
+                  number: 80

@@ -1,0 +1,8 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: {{ include "timatech.name" . }}-cert
+  namespace: default
+spec:
+  domains:
+    - {{ include "timatech.name" . }}.timakondu.com
