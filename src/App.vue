@@ -1,5 +1,5 @@
 <template>
-  <img id="logo" alt="TimaTech Logo" src="./assets/TimCanDo_logo.jpeg" />
+  <img id="logo" alt="TimaTech Logo" src="./assets/TimCanDo_logo.jpeg" width="500" height="500" />
   <TimaTech msg="Tim Can't Do Handyman Services" />
 </template>
 

@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      Tim Can Do Handyman services is here to solve any job, big or small! 
+      We can take on any job, <em>big</em> or <small>small</small> 
     </p>
     <h3>Essential Links</h3>
     <ul>
