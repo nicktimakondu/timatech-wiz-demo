@@ -36,14 +36,14 @@ name: 'Build and Deploy to GKE'
 on:
   push:
     branches:
-      - '"deploy"'
+      - deploy
   pull_request:
     branches:
       - main
 
 env:
-  PROJECT_ID: 'my-project' # TODO: update to your Google Cloud project ID
-  GAR_LOCATION: 'us-central1' # TODO: update to your region
+  PROJECT_ID: 'timakondu-lab-dev' 
+  GAR_LOCATION: 'us-east1' # TODO: update to your region
   GKE_CLUSTER: 'cluster-1' # TODO: update to your cluster name
   GKE_ZONE: 'us-central1-c' # TODO: update to your cluster zone
   DEPLOYMENT_NAME: 'gke-test' # TODO: update to your deployment name
