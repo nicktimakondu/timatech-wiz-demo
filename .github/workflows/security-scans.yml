@@ -3,10 +3,10 @@ name: Run Wiz CLI Directory and IaC Scan
 on:
   push:
     branches:
-      - main
+      - deploy
   pull_request:
     branches:
-      - main
+      - deploy
 
 permissions:
   contents: read
