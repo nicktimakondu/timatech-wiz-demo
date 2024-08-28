@@ -37,9 +37,6 @@ on:
   push:
     branches:
       - deploy
-  pull_request:
-    branches:
-      - main
 
 env:
   PROJECT_ID: 'timakondu-lab-dev'
