@@ -1,26 +1,26 @@
-name: Docker Build/Scan/Push
+# name: Docker Build/Scan/Push
 
-on:
-  push:
-    branches:
-      - deploy
+# on:
+#   push:
+#     branches:
+#       - deploy
 
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-# Trigger push
-jobs:
-  Build-Scan-Push:
-    runs-on: ubuntu-latest
-    permissions:
-      security-events: write
-      id-token: write
-      contents: read
+# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# # Trigger push
+# jobs:
+#   Build-Scan-Push:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       security-events: write
+#       id-token: write
+#       contents: read
 
-    env:
-      WIZ_CLIENT_ID: ${{ secrets.WIZ_CLIENT_ID }}
-      WIZ_CLIENT_SECRET: ${{ secrets.WIZ_CLIENT_SECRET }}
-      WIZ_POLICY: "Default vulnerabilities policy"
-    steps:
+#     env:
+#       WIZ_CLIENT_ID: ${{ secrets.WIZ_CLIENT_ID }}
+#       WIZ_CLIENT_SECRET: ${{ secrets.WIZ_CLIENT_SECRET }}
+#       WIZ_POLICY: "Default vulnerabilities policy"
+#     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
 
       # - name: Download Wiz CLI
