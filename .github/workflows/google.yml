@@ -39,7 +39,7 @@ on:
       - '"deploy"'
   pull_request:
     branches:
-      - deploy
+      - main
 
 env:
   PROJECT_ID: 'my-project' # TODO: update to your Google Cloud project ID
