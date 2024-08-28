@@ -10,8 +10,8 @@
   "dependencies": {
     "core-js": "^3.25.0",
     "vue": "^3.2.38",
-    "wrangler": "3.19.0",
-    "nth-check": "2.0.1"
+    "wrangler": "3.18.0",
+    "nth-check": "1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
