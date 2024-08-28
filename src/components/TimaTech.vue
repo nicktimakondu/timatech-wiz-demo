@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      Timatech Industries is a consortium of companies supporting all things Tima. Subsidiaries include Timatech Consulting and Tima Foods. 
+      We can take on any job, <em>big</em> or <small>small</small> 
     </p>
     <h3>Essential Links</h3>
     <ul>
