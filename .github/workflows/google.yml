@@ -43,12 +43,12 @@ on:
 
 env:
   PROJECT_ID: 'timakondu-lab-dev' 
-  GAR_LOCATION: 'us-east1' # TODO: update to your region
-  GKE_CLUSTER: 'timatech-lab-1' # TODO: update to your cluster name
+  GAR_LOCATION: 'us-east1'
+  GKE_CLUSTER: 'projects/timakondu-lab-dev/locations/us-east1/clusters/timatech-lab-1' 
   GKE_ZONE: 'us-east1' # TODO: update to your cluster zone
-  DEPLOYMENT_NAME: 'gke-test' # TODO: update to your deployment name
-  REPOSITORY: 'samples' # TODO: update to your Artifact Registry docker repository name
-  IMAGE: 'static-site'
+  # DEPLOYMENT_NAME: 'gke-test' # TODO: update to your deployment name
+  # REPOSITORY: 'samples' # TODO: update to your Artifact Registry docker repository name
+  # IMAGE: 'static-site'
   WORKLOAD_IDENTITY_PROVIDER: 'projects/15919242737/locations/global/workloadIdentityPools/github-pool/providers/nt-github' 
 
 jobs:
@@ -89,7 +89,6 @@ jobs:
         uses: 'google-github-actions/get-gke-credentials@6051de21ad50fbb1767bc93c11357a49082ad116' # google-github-actions/get-gke-credentials@v2
         with:
           cluster_name: '${{ env.GKE_CLUSTER }}'
-          location: '${{ env.GKE_ZONE }}'
 
       # # Build the Docker image
       # - name: 'Build and push Docker container'
