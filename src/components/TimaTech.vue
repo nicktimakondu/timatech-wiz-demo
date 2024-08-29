@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      We can take on any job, <em>big</em> or <small>small</small> 
+      We can take on any job, <em>big</em> or <small>small</small> !
     </p>
     <h3>Essential Links</h3>
     <ul>
