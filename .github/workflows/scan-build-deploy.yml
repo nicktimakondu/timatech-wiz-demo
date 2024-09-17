@@ -7,7 +7,7 @@ name: 'Wiz Scan, Docker Build, and Deploy to GKE'
 on:
   push:
     branches:
-      - deploy
+      - main
 
 env:
   PROJECT_ID: 'timakondu-lab-dev'
