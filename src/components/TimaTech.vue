@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      We charge a nick-el for any job, <em>big</em> or <small>small</small> !
+      We charge a nick for any job, <em>big</em> or <small>small</small> !
     </p>
     <h3>Essential Links</h3>
     <ul>
